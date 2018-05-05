@@ -1,0 +1,181 @@
+.container {
+    min-height: 100vh;
+    max-width: 70vw;
+    background: #eee;
+    padding: 10rem;
+}
+.circle__content {
+    height: 18rem;
+    width: 18rem;
+    background: fade-out($color: pink, $amount: .6);
+    position: relative;
+}
+.main {
+
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    // background: rgb(171, 177, 160);
+    border: .4rem solid rgb(12, 12, 66);
+    position: relative;
+    overflow: hidden;
+    // animation: moveinRight 1s linear infinite;
+
+    .circle {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        background: rgb(224, 158, 13);
+        border: .4rem solid rgb(12, 12, 66);
+        position: absolute;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            background: #eee;
+            border: .4rem solid rgb(12, 12, 66);
+        }
+    }
+    .circle-1 {
+        top: 0%;
+        left: -12%;
+    }
+    .circle-2 {
+        top: 30%;
+        left: 65%;
+    }
+    .circle-3 {
+        top: 77%;
+        left: -30%;
+
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: rgb(12, 12, 66);
+    position: absolute;
+}
+
+.dot-1 {
+    top: 60%;
+    left: 40%;
+    // position: relative;
+}
+
+.dot-2 {
+    top: 15%;
+    left: 60%;
+}
+
+.line {
+    height: .4rem;
+    width: 10rem;
+    background: rgb(12, 12, 66);
+    position: absolute;
+}
+
+.line-1 {
+    top: -220%;
+    left: -40%;
+    transform: rotate(20deg);
+}
+
+.line-2 {
+    top: 30%;
+    left: -500%;
+    transform: rotate(80deg);
+}
+
+.line-3 {
+    top: 110%;
+    left: 10%;
+    transform: rotate(-40deg);
+}
+.circle__shadow {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -1.5rem;
+    left: -4rem;
+    // background: rgb(105, 95, 95);
+    box-shadow: 0 0 6rem  rgba(0, 0, 0, 0.9) ;
+}
+
+.head {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    height: 12rem;
+    width: 12rem;
+}
+
+.head-top-crop {
+    height: 50%;
+    overflow: hidden;
+}
+
+.head-top {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: .4rem solid rgb(12, 12, 66);
+    // position: relative;
+}
+
+.lens {
+
+}
+
+.frickle {
+
+}
+
+.head-shadow {
+
+}
+
+.head-bottom {
+    position: relative;
+}
+
+.head-bottom-base,
+.side-1,
+.side-2 {
+    height:1.2rem;
+    width: 100%;
+    background:#9ECADF;
+    border-bottom: .4rem solid rgb(12, 12, 66);
+    position: absolute;
+}
+
+.head-bottom-base {
+    
+    width: 80%;
+    left: 10%;
+}
+
+.side-1 {
+    width: 1rem;
+    transform: rotate(40deg);
+    transform-origin: bottom left;
+    top: 0;
+    left: 0;
+    
+}
+
+.side-2 {
+    width:1rem;
+}

@@ -1,0 +1,38 @@
+body {
+    padding: 5rem;
+}
+
+.box {
+    display: inline-block;;
+    background: red;
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    // animation: myframe 2s ease-in-out 0s infinite;
+    animation-name: myframe;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction:normal ;
+    animation-fill-mode: forwards;
+
+    &.is-paused {
+        animation-play-state: paused;
+    }
+
+
+    display: none;//// for next coding
+}
+
+@keyframes myframe {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
